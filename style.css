@@ -59,7 +59,11 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url("image/IMG_20251007_140711.jpg");
+    background-position:right 1px;
+    background-repeat: no-repeat;
 }
+
 
 #home h1 {
     font-size: 48px;
@@ -72,7 +76,7 @@ section {
 }
 
 #home button {
-    width: 160px;
+    width: 240px;
     padding: 10px;
     border: none;
     background: #38bdf8;
@@ -82,7 +86,33 @@ section {
 }
 
 #home button:hover {
-    background: white;
+    background: aliceblue;
+}
+
+
+
+
+#home .social {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+#home .social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 2px solid #38bdf8;
+    border-radius: 50%;
+    font-size: medium;
+}
+.social a:hover {
+    background-color: #38bdf8;
+    color: aliceblue;
+    transform: translateY(-2px);
+
 }
 
 
