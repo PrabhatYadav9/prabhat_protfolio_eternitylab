@@ -14,12 +14,14 @@
   <header>
     <nav>
       <h2 class="log">Prabhat Yadav</h2>
+      
+
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Project</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
 
       </ul>
     </nav>
@@ -27,24 +29,29 @@
 
   <!-- home -->
   <section id="home">
-    <h1>Hi I'm <br>Prabhat Yadav</h1>
-    <p>A web Developer</p>
-    <p>I’m a passionate developer ,constantly diving into new tech challenges. <br> My curiosity fuels daily
-      discoveries and an endless quest for knowledge.</p>
 
-    <button>Download CV</button>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/prabhat-yadav-ba65a12a1/"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/PrabhatYadav9"><i class="bi bi-github"></i></a>
-      <a href="#"><i class="bi bi-instagram"></i></a>
-      <a href="#"><i class="bi bi-facebook"></i></a>
-      <a href="#"><i class="bi bi-twitter-x"></i></a>
-    </div>
-    <!-- <div class="home-img">
-      <div class="img-box">
-        <img src="image/IMG_20251007_140711.jpg" alt="my image">
+    <div class="home-content">
+      <div class="home-text">
+        <h1>Hi I'm <br>Prabhat Yadav</h1>
+        <p>A web Developer</p>
+        <p>I’m a passionate developer ,constantly diving into new tech challenges. My curiosity fuels daily
+          discoveries and an endless quest for knowledge.</p>
+
+        <button>Download CV</button>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/prabhat-yadav-ba65a12a1/"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/PrabhatYadav9"><i class="bi bi-github"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+        </div>
       </div>
-    </div> -->
+      <div class="home-img">
+
+        <img src="image/IMG_20251007_140711.jpg" alt="my image">
+
+      </div>
+    </div>
 
 
   </section>
@@ -71,26 +78,45 @@
   </section>
   <!-- projrct -->
   <section id="projects">
+
     <h2>Projects</h2>
+    <div class="project-container">
 
-    <div>
-      <h3>SONAR-Based Object Classification ML Model</h3>
-      <p>Python | NumPy | Pandas | Scikit-learn | Matplotlib
-      </p>
-    </div>
+      <div class="project-item">
+        <h3>SONAR-Based Object Classification ML Model</h3>
+        <p>Python | NumPy | Pandas | Scikit-learn | Matplotlib
+        </p>
+      </div>
+      <div class="project-item">
+        <h3>Carbon Footprint Monitoring System</h3>
+        <p>Data Collection | Analysis | Sustainability Modeling</p>
 
-    <div>
-      <h3>QR Code–Based Digital Voting System</h3>
-      <p>Java | Android Studio | QR Code Authentication</p>
+      </div>
+
+      <div class="project-item">
+        <h3>QR Code–Based Digital Voting System</h3>
+        <p>Java | Android Studio | QR Code Authentication</p>
+      </div>
     </div>
   </section>
 
   <!-- contact -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: Prabhaty701@gmail.com</p>
-    
+    <form class="contact-form">
+      <input type="text" placeholder="Enter your name">
+      <input type="email" placeholder="Enter your email">
+      <textarea placeholder="comment"></textarea>
+      <button type="submit">Submit</button>
+
+    </form>
+
   </section>
+
+  <footer>
+  <p>© 2025 Prabhat Yadav</p>
+</footer>
+
   <script src="script.js"></script>
 </body>
 
