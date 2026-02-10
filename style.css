@@ -277,6 +277,58 @@ footer {
   padding: 20px;
   color: gray;
 }
+/* new */
+.contact-text {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: 1px solid #38bdf8;
+    font-size: 14px;
+}
+
+.contact-info i {
+    font-size: 18px;
+    color: #38bdf8;
+}
+
+/* direct buttons */
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.contact-actions a {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-actions a:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
 /* hamburger */
 .hamburger {
     display: none;
