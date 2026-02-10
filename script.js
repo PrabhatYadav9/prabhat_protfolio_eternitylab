@@ -8,21 +8,31 @@ cvButton.addEventListener("click", () => {
 // hamburger 
 const ham = document.querySelector(".hamburger");
 const menu = document.querySelector("nav ul");
+const navLinks = document.querySelectorAll(".nav-link");
 
-ham.onclick = () => {
+ham.addEventListener("click", () => {
     menu.classList.toggle("active");
-};
+});
+navLinks.forEach(link =>{
+    link.addEventListener("click", ()=>{
+        menu.classList.remove("active");
+    });
+});
 
-// scroll reveal
-const sections = document.querySelectorAll(".reveal");
+// SCROLL ANIMATION
+const reveals = document.querySelectorAll(".reveal");
 
 window.addEventListener("scroll", () => {
-    sections.forEach(sec => {
-        if (sec.getBoundingClientRect().top < window.innerHeight - 50) {
-            sec.classList.add("show");
+    reveals.forEach((el) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
         }
     });
 });
+
 
 
 

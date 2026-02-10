@@ -11,6 +11,7 @@ body {
     background-color: #0f172a;
     color: #ffffff;
     line-height: 1.6;
+    scroll-padding-top: 90px;
 }
 
 header {
@@ -18,6 +19,7 @@ header {
     padding: 15px 40px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -56,7 +58,7 @@ nav ul li a:hover {
     transition: 0.6s ease;
 }
 
-.reveal.show {
+.reveal.active {
     opacity: 1;
     transform: translateY(0);
 }
@@ -67,7 +69,9 @@ nav ul li a:hover {
 
 section {
     padding: 80px 40px;
+    position: relative;
 }
+
 
 
 #home {
@@ -155,7 +159,7 @@ section {
 
 #about p {
     max-width: 700px;
-    margin-top: 10px;
+    
 }
 
 #skills{
@@ -181,6 +185,18 @@ section {
     font-size: 15px;
     transition: all 0.3s ease;
 }
+.skill-icons li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.skill-icons i {
+    font-size: 26px;
+    color: #38bdf8;
+}
+
 
 #skills ul li:hover{
     background: #38bdf8;
@@ -194,38 +210,23 @@ section {
     justify-content: space-between;
     margin-top: 30px;
     flex-wrap: wrap;
+    
     gap: 20px; 
 }
-#projects .project-item-s{
-    background-image: url("image/p1.jpg");
-}
-#projects .project-item-q{
-    background-image: url("image/v1.jpg");
-}
-#projects .project-item-c{
-    background-image: url(image/c3.jpg);
-}
+
 
 #projects .project-item{
     padding: 30px;
     border-radius: 8px;
     width: 48%;
-    min-height: 960px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(56,189,248,0.3);
     transition: all 0.3s ease;
     cursor: pointer;
-    background-size: cover;
-    background-position: center;
     color: white;
     position: relative;  
 }
 
-#projects .project-item::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(2,6,23,0.75);
-    border-radius: 6px;
-}
 #projects .project-item> *{
     position: relative;
     z-index: 1;
@@ -240,8 +241,7 @@ section {
 
 
 #contact{
-    padding: 80px 40px;
-    text-align: center;
+        text-align: center;
 }
 
 
@@ -291,6 +291,9 @@ section h2{
 }
 /* media query */
 @media(max-width:768px){
+    html{
+        scroll-padding-top: 130px;
+    }
     nav{
         flex-direction: column;
         gap: 10px;
@@ -355,3 +358,4 @@ section h2{
 
     
 }
+
