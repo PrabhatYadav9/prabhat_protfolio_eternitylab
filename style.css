@@ -30,7 +30,7 @@ nav {
 }
 
 .logo {
-    color: #38bdf8;
+    color: #e9eef1;
     font-size: 24px;
 }
 
@@ -159,8 +159,12 @@ section {
 
 #about p {
     max-width: 700px;
-    
-}
+    margin: 0 auto;
+    text-align: center; 
+    font-size: 18px;
+} 
+
+
 
 #skills{
     text-align: center;
@@ -409,5 +413,14 @@ section h2{
     
 
     
+}
+@media(max-width:768px){
+
+    .about-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
 }
 
